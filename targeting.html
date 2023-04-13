@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Indie+Flower&family=Lato:wght@300&family=M+PLUS+Code+Latin:wght@100&family=Montserrat:wght@100&family=Mulish:wght@200&family=Nanum+Gothic&family=Nunito:wght@500&family=Open+Sans:ital,wght@0,500;0,800;1,400&family=Outfit:wght@100&family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@300&family=Rubik:wght@700;900&family=Source+Sans+Pro:wght@300;700&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Indie+Flower&family=Lato:wght@300&family=M+PLUS+Code+Latin:wght@100&family=Montserrat:wght@100&family=Mulish:wght@200&family=Nanum+Gothic&family=Nunito:wght@500&family=Open+Sans:ital,wght@0,500;0,800;1,400&family=Outfit:wght@100&family=PT+Sans:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@300&family=Rubik:wght@700;900&family=Source+Sans+Pro:wght@300&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	
+}
+nav{
+	width: 100%;
+	display: flex;
+	background: #0084ff; 
+    background-image: linear-gradient(to right, black , #e600ff);
+	font-family: cursive;
+     
+}
+.sidebar{
+	display: none;
+	width: 20%;
+	background: black;
+	top: 0;
+	left: 0;
+	height: 100%;
+	position: fixed;
+	transition: 2s;
+
+}
+.sidebar ul{
+	margin-top: 40%;
+	list-style: none;
+	transition: 2s;
+}
+ul i{
+	color: yellow;
+	position: absolute;
+	top: 5%;
+	right:12%;
+	font-size: 150%;
+}
+ul i:hover{
+    color: red;
+    cursor: pointer;
+}
+ul li{
+	font-size: 120%;
+	text-align: center;
+	padding-left: 7%;
+	margin: 5% 0;
+	margin-top: 0;
+	height: 20px;
+	padding: 0;
+	color: white;
+	width: 100%;
+	transition: 0.5s;
+}
+ul li:hover{
+	color: #6aff00;
+}
+nav h2{
+	font-size: 190%;
+	color: white;
+	padding: 1%;
+}
+nav i{
+	position: absolute;
+	right: 3.5%;
+	top: 4%;
+	color: white;
+	font-size: 139%;
+	cursor: pointer;
+}
+main{
+	display: flex;
+	width: 100%;
+	background: #9693e6;
+	background-image: linear-gradient(to right,#6f00ff, #ff0000);
+	padding: 5% 6%;
+
+}
+main section{
+	width: 30%;
+	margin: 0 1.5%;
+}
+main section .design{
+	width: 100%;
+	background: white;
+	padding: 7% 5%;
+	text-align: center;
+	border-radius: 36px;
+}
+main section .design h1{
+	color: #4b4a65;
+	
+}
+main section .design h4{
+	margin-top: 5%;
+	color: #4b4a65;
+	font-size: 105%;
+	line-height: 150%;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+main section .design  button{
+	clip-path: circle();
+	background: #c3c1f1;
+	border: none;
+	font-size: 150%;
+	padding: 6%;
+	margin-top: 6%;
+}
+main section .text{
+	background: yellow;
+	padding-top: 19%;
+	padding-bottom: 32%;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	background: none;
+}
+main section .text h1{
+	font-weight: bold;
+	color: white;
+	font-size: 200%;
+	font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+main section .text h3{
+	margin-top: 5%;
+	font-size:94%;
+	line-height: 24px;
+	color: white;
+	font-weight: 100;
+}
+main section .design img{
+	width: 83%;
+}
+@media screen and (max-width: 900px){
+	main{
+		display: grid;
+	}
+	main section{
+		width: 100%;
+		display: block;
+		margin: 5% 0;
+	}
+	main section .design{
+		width: 100%;
+	}
+	main section .text{
+		padding-bottom: 15%;
+	}
+    main section .text h1{
+    	font-size: 220%;
+    }
+	main section .text h3{
+		font-size: 150%;
+			}
+    .sidebar{
+    	width: 56%;
+    	z-index: 99;
+    }
+}
+</style>
+<body>
+<nav>
+	<h2>logo</h2>
+	<i class="fas fa-bars" id="menu"></i>
+</nav>
+<section class="sidebar">
+<ul>
+	<i class="fas fa-times-circle" id="close"></i>
+	<li>Home</li>
+	<li>About</li>
+	<li>Contact</li>
+</ul>
+</section>
+<main>
+	<section>
+		<div class="design">
+			<img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/67904378aa10504fb500edf3/multi-device-targeting-abstract-concept_335657-3041.jpg">
+			<h1>Targeting</h1>
+			<h4>Eget est lorem ipsum dolor sit <br>amet consectetur adipiscing elit. <br>Eleifend mi in nulla posuere<br> sollicitudin aliquam ultrices.</h4>
+			<button>&#8615;</button>
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="text">
+			<h1>Strategic Planning</h1>
+			<h3>Egestas dui id ornare arcu odio. In tellus integer <br>feugiat scelerisque varius morbi enim nunc. <br>Habitasse platea dictumst quisque sagittis. <br>Interdum.</h3>
+		</div>
+		<div class="design">
+			<img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/6418f6931eb356a9984e3b66/online-assistant-user-help-frequently-asked-questions-call-center-worker-cartoon-character-woman-working-hotline_335657-2336.jpg">
+			<h1>24/7 Support</h1>
+			<h4>Eget est lorem ipsum dolor sit <br>amet consectetur adipiscing elit. <br>Eleifend mi in nulla posuere<br> sollicitudin aliquam ultrices.</h4>
+			<button>&#8615;</button>
+		</div>
+	</section>
+
+
+
+
+	<section>
+		<div class="design">
+			<img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/96d0bf8f1afd5f9cafc24c5b/high-roi-content-abstract-concept-vector-illustration-social-media-marketing-online-content-production-high-roi-publication-return-investment-meas.jpg">
+			<h1>Media Marketing</h1>
+			<h4>Eget est lorem ipsum dolor sit <br>amet consectetur adipiscing elit. <br>Eleifend mi in nulla posuere<br> sollicitudin aliquam ultrices.</h4>
+			<button>&#8615;</button>
+		</div>
+	</section>
+</main>
+
+
+
+
+
+<script type="text/javascript">
+	var menu = document.querySelector("#menu");
+	var close = document.querySelector("#close");
+	var sidebar = document.querySelector(".sidebar");
+
+	menu.onclick = function (){
+		sidebar.style.display = "block";
+		menu.style.display = "none";
+	}
+	close.onclick = function() {
+		sidebar.style.display = "none";
+		menu.style.display = "block";
+	}
+</script>
+</body>
+</html>
